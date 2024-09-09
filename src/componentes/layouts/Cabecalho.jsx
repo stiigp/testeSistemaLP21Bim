@@ -1,11 +1,13 @@
 import { Alert } from "react-bootstrap";
-export default function Cabecalho (props) {
-
-    // metodo render 
+export default function Cabecalho(props){
+    
+    //método render
     return (
-        <Alert variant="danger" className={"text-center"}>
-
-        {props.titulo || "Titulo nao fornecido"}
+        <Alert className={"text-center"} variant="light">
+            <h1>
+                {props.titulo || "Título não fornecido"}
+            </h1>
         </Alert>
+
     );
 }
