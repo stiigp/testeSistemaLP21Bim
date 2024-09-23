@@ -23,12 +23,6 @@ export default function TabelaProdutos(props) {
     return (
         <>
             <Container>
-                <Button className="mb-3" variant="primary"
-                    onClick={() => {
-                        props.setExibirTabela(false);
-                    }}>
-                    Adicionar
-                </Button>
                 <Table striped bordered hover>
                     <thead>
                         <th>Código</th>
@@ -51,10 +45,10 @@ export default function TabelaProdutos(props) {
                                         <td>{produto.precoVenda}</td>
                                         <td>{produto.qtdEstoque}</td>
                                         <td><img style={{
-                                                          "width":"99px",
-                                                          "height":"99px"
+                                            "width":"99px",
+                                            "height":"99px"
                                                         }} src={produto.urlImagem} alt="foto do produto" /></td>
-                                        <td>{produto.dataValidade}</td>
+                                        <td>{new Date(produto.dataValidade).toLocaleDateString()}</td>
                                         <td>
                                             <Button onClick={()=>{atualizarProduto(produto);}} variant="warning">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -76,6 +70,13 @@ export default function TabelaProdutos(props) {
                         }
                     </tbody>
                 </Table>
+                <Button className="mb-3 d-flex justify-content-center mx-auto" variant="success"
+                    onClick={() => {
+                        props.setExibirTabela(false);
+                    }}>
+                    Adicionar
+                </Button>
+
             </Container>
         </>
     );

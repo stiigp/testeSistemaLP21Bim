@@ -1,5 +1,5 @@
 
-import Formulario from "./Formulario";
+import Formulario from "../layouts/Formulario";
 export default function TelaCadastroFornecedor(props) {
 
 

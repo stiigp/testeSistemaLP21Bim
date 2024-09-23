@@ -22,7 +22,7 @@ export default function Formulario (props) {
     if(props.classe==="forn")
 {    return (
         
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form noValidate validated={validated} onSubmit={handleSubmit} className="bg-dark text-white p-3">
         <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="validationCustom01">
             <Form.Label>Nome</Form.Label>

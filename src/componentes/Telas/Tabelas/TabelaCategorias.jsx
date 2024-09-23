@@ -33,15 +33,6 @@ export default function TabelaCategorias(props) {
   return (
     <>
       <Container>
-        <Button
-          className="mb-3"
-          variant="primary"
-          onClick={() => {
-            props.setExibirCategoria(false);
-          }}
-        >
-          Adicionar
-        </Button>
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -59,8 +50,8 @@ export default function TabelaCategorias(props) {
                 <tr key={categoria.codigo}>
                   <td>{categoria.codigo}</td>
                   <td>{categoria.descricao}</td>
-                  <td>{categoria.dataCriacao}</td>
-                  <td>{categoria.ultimaAtualizacao}</td>
+                  <td>{new Date(categoria.dataCriacao).toLocaleDateString()}</td>
+                  <td>{new Date(categoria.ultimaAtualizacao).toLocaleDateString()}</td>
                   <td>{categoria.status}</td>
                   <td>
                     <Button
@@ -109,6 +100,12 @@ export default function TabelaCategorias(props) {
             })}
           </tbody>
         </Table>
+        <Button className="mb-3 d-flex justify-content-center mx-auto" variant="success"
+                    onClick={() => {
+                        props.setExibirCategoria(false);
+                    }}>
+                    Adicionar
+                </Button>
       </Container>
     </>
   );
