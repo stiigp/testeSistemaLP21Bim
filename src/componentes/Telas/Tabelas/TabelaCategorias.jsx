@@ -100,6 +100,7 @@ export default function TabelaCategorias(props) {
             })}
           </tbody>
         </Table>
+        <h4>Número de categorias: {props.listaCategoria?.length}</h4>
         <Button className="mb-3 d-flex justify-content-center mx-auto" variant="success"
                     onClick={() => {
                         props.setExibirCategoria(false);

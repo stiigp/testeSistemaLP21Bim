@@ -6,7 +6,7 @@ import {
   Button
 } from "react-bootstrap";
 
-export default function FormCadFornecedores(props) {
+export default function FormCadFornecedor(props) {
 
     const [formValidado, setFormValidado] = useState(false);
     const fornecedorReseta = {

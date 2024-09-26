@@ -16,7 +16,7 @@ export default function TelaCadastroCategoria(props) {
         ultimaatualizacao:"",
         totalprodutos:0,
         status:""
-    });     
+    });
 
 
     return (

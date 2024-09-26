@@ -70,6 +70,7 @@ export default function TabelaProdutos(props) {
                         }
                     </tbody>
                 </Table>
+                <h4>Número de produtos: {props.listaProdutos?.length}</h4>
                 <Button className="mb-3 d-flex justify-content-center mx-auto" variant="success"
                     onClick={() => {
                         props.setExibirTabela(false);
