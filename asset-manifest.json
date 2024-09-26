@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/testeSistemaLP21Bim/static/css/main.d221dc40.css",
+    "main.js": "/testeSistemaLP21Bim/static/js/main.91745162.js",
+    "static/media/pato.png": "/testeSistemaLP21Bim/static/media/pato.b5ff0a4f6d37261496c8.png",
+    "static/media/pagina404.png": "/testeSistemaLP21Bim/static/media/pagina404.4bf0805d8d55a31c5142.png",
+    "index.html": "/testeSistemaLP21Bim/index.html",
+    "main.d221dc40.css.map": "/testeSistemaLP21Bim/static/css/main.d221dc40.css.map",
+    "main.91745162.js.map": "/testeSistemaLP21Bim/static/js/main.91745162.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d221dc40.css",
+    "static/js/main.91745162.js"
+  ]
+}
